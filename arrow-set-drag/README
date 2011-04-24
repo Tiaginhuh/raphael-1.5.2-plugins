@@ -1,0 +1,17 @@
+Plugin for raphael.js that will draw arrow set on the canvas.
+
+The set contains two path objects. One representing the arrow line and the other representing the arrow head.
+
+Dependencies:
+
+    - raphael.js - See http://raphaeljs.com/ for more info on the library.
+    - raphael.draggable.js - See https://github.com/mephraim/raphael.draggable for more info on the library.
+    
+
+Please note the drag functionality won't work in Internet Explorer.
+
+
+This plugin was inspired by: http://taitems.tumblr.com/post/549973287/drawing-arrows-in-raphaeljs
+
+
+
