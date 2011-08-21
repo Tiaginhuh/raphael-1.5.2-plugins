@@ -9,21 +9,25 @@
 
     Raphael.fn.eldrag = function (elements) {
         var paper = this,
-            setdrag = paper.set(elements),
+            esdrag = paper.set(elements),
+            lastx = 0,
+            lasty = 0,
             dmove = (typeof arguments[1] == "function") ? arguments[1] : function() {},
             dstart = (typeof arguments[2] == "function") ? arguments[2] : function() {},
             dend = (typeof arguments[3] == "function") ? arguments[3] : function() {},
             start = function() {
                 dstart();
-                setdrag.origbb = setdrag.getBBox();
+                lastx = event.clientX;
+                lasty = event.clientY;
             },
             move = function (dx, dy) {
-                var newbb = setdrag.getBBox();
-                setdrag.translate((setdrag.origbb.x - newbb.x) + dx, (setdrag.origbb.y - newbb.y) + dy);
+                esdrag.translate(event.clientX - lastx, event.clientY - lasty);
+                lastx = event.clientX;
+                lasty = event.clientY;
                 dmove();
             };
         
-        setdrag.drag(move, start, dend);
+        esdrag.drag(move, start, dend);
     }
     
 })();
