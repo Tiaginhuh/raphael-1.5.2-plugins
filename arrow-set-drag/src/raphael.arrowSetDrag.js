@@ -49,6 +49,11 @@
         return arrow;
     };
     
+    /**
+    * Triangle path string
+    * Adapted from raphael.primitives.js
+    * For more info visit: https://github.com/DmitryBaranovskiy/raphael
+    */
     function triangle (cx, cy, r) {
         r *= 1.75;
         return "M".concat(cx, ",", cy, "m0-", r * .58, "l", r * .5, ",", r * .87, "-", r, ",0z");

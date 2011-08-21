@@ -5,8 +5,3 @@ The set contains two path objects. One representing the arrow line and the other
 Dependencies:
 
     - raphael.js - See http://raphaeljs.com/ for more info on the library.
-
-This plugin was inspired by: http://taitems.tumblr.com/post/549973287/drawing-arrows-in-raphaeljs
-
-
-
