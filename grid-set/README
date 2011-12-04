@@ -1,39 +1,4 @@
-Overview
---------
+THIS PLUGIN IS DEPRECATED - DO NOT USE THIS
+Use Raphael 2.0 and associated plugins, not this one.
 
-Plugin for raphael.js that will draw grid set (resizable rectangle) on the canvas.
-
-The set contains five objects. One raphael rectangle and four raphael circles (a circle sits on each corner of the rectangle).
-
-Click and drag on any corner of the rectangle to resize, click on the perimeter or inside the rectangle to move it around.
-
-
-Usage
------
-
-    - Initialize drag on the paper, only call this function once.
-        
-        paper.gridSet.init();
-
-    - Draw the resizable set (create as many as you need).
-    
-        paper.gridSet.create(100,150,400,100,15);
-
-
-Extra Info
-----------
-
-    - It is up to you to add the fill attribute to each element on the paper,
-      otherwise drag will only work by clicking on the perimeter of the element.
-    
-    - See the example for more info.
-
-
-Dependencies
-------------
-
-    - raphael.js - See http://raphaeljs.com/ for more info on the library.
-    - raphael.draggable.js - See https://github.com/mephraim/raphael.draggable for more info on the library.
-
-
-
+This never worked correctly anyway - many bugs still exist, this was just a half assed implementation as a prototype.

@@ -1,22 +1,7 @@
-Plugin for raphael.js to create a custom checkbox.
-
-Usage:
-
-    var a = paper.checkbox(20, 30, 20, 20, 5); // Parameters are x1, y1, width, height, radius
-    a[2].checkboxstate(); // Determine if checkbox element has been checked or not
-    
-    See the example for more info.
-    
-    Remove the console.log() statements if you want it to work in IE.
-   
-Dependencies:
-
-    - raphael.js - See http://raphaeljs.com/ for more info on the library.
+﻿THIS PLUGIN IS DEPRECATED - DO NOT USE THIS
+Use Raphael 2.0 and associated plugins, not this one.
 
 Credits:
     
-    This plugin was inspired by Ilkka Syrj�kari.
+    This plugin was inspired by Ilkka Syrjäkari.
     See http://groups.google.com/group/raphaeljs/browse_thread/thread/c19baf037e266e87 for more info.
-
-
-
